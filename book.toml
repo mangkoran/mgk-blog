@@ -1,0 +1,6 @@
+[book]
+authors = ["Afiq Nazrie"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Mangkoran's Blog"
