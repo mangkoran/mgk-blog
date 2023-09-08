@@ -2,12 +2,12 @@
 
 [About](./about.md)
 
-- [Tech](./tech/index.md)
+- [Tech](./tech.md)
 
-- [Keyboards](./keyboards/index.md)
+- [Keyboards](./keyboards.md)
 
-- [Music](./music/index.md)
+- [Music]()
 
-- [Games](./games/index.md)
+- [Games]()
 
-- [Books](./books/index.md)
+- [Books]()

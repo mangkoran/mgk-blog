@@ -1,4 +1,4 @@
-# Interests
+# Tech
 
 I've been curious with Linux since junior high. Back then I joined local IT community and learned
 Linux Mint with Mas Ibnu (if I remembered his name correctly). Fast forward, I dug deeper and deeper
