@@ -6,7 +6,7 @@ reliability engineer at [AccelByte](https://accelbyte.io/).
 
 ## Interests
 
-During my free time, I do enjoy several things:
+During my free time, I do enjoy doing several things:
 
 - Build mechanical keyboards
 - Watch esports (League, CS)
