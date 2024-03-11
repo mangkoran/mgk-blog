@@ -1,0 +1,22 @@
+author = "mangkoran"
+base_url = "https://blog.mangkoran.com"
+build_search_index = false
+compile_sass = false
+taxonomies = [{ name = "tags" }]
+theme = "zola-xmin"
+title = "mangkoran's blog"
+
+[markdown]
+highlight_code = false
+
+[extra]
+[extra.menus]
+main = [
+  { name = "Home", url = "" },
+  { name = "Blog", url = "blog/" },
+  { name = "Tags", url = "tags/" },
+  { name = "About", url = "about/" },
+]
+
+[extra.params]
+footer = "&copy; [mangkoran](https://blog.mangkoran.com) 2024 – {Year} | [Github](https://github.com/mangkoran) | [Twitter](https://twitter.com/mangkoran)"
