@@ -1,13 +1,13 @@
 +++
+title = "TinyGo WSL2"
+date = 2024-03-11
 draft = true
 +++
 
-# nice!nano TinyGo Development in WSL(2)
+<!-- In this first blog I would like to write on how to program nice!nano using -->
+<!-- TinyGo in WSL(2) environment. -->
 
-In this first blog I would like to write on how to program nice!nano using
-TinyGo in WSL(2) environment.
-
-## Why?
+## Whys
 
 First why is "why nice!nano?". nice!nano (I will call it n!n from now on) is a
 Pro-micro replacement board that has Bluetooth capability. Both are mostly used

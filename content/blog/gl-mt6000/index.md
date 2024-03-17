@@ -1,6 +1,6 @@
 +++
 title = "Convert GL.iNet GL-MT6000 Flint 2 router version from China to Global"
-date = 2019-11-27
+date = 2024-03-11
 draft = false
 [taxonomies]
 tags = ["homelab"]
@@ -50,27 +50,22 @@ additional context based on my findings with Flint 2.
    - line 1 (`0x00` - `0xff`): partition that stores `country_code`
    - line 2 (`0x10` - `0x13`): byte offset of `country_code` in the partition
 
+   ![devicetree](wezterm-gui_Zycur7YhoG_2.png)
+
    For my case it's `/dev/mmcblk0p2` with `x88` byte offset.
 
 2. Check the partition. As it contains hundreds of lines, it's recommended to
-   save the output as a text file and open it using a text editor. Please adjust
-   the command based on the output you get from step 1.
+   pipe the output to a pager or text editor. Here I use `vim`.
 
    ```sh
-   hexdump -C /dev/mmcblk0p2 > mmcblk0p2.txt
+   hexdump -C /dev/mmcblk0p2 | vim -
    ```
 
    Check according to the byte offset from step 1.
 
-   Filename: `mmcblk0p2.txt`
+   ![mmcblk0p2](wezterm-gui_iNQF7qRFDm.png)
 
-   ```txt
-   ...
-   00000080  ff ff ff ff ff ff ff ff  43 4e ff ff ff ff ff ff  |........CN......|
-   ...
-   ```
-
-   As we could see it should be `CN`. We may proceed to update the country code.
+   As we could see currently it is `CN`. We may proceed to update the country code.
 
 3. Update the country code. Please adjust the command based on the output you
    get from step 1.
@@ -86,3 +81,7 @@ additional context based on my findings with Flint 2.
    - `seek=136`: `0x88` to decimal = 136
 
 4. If success, the Admin Panel will no longer shows `CN` logo.
+
+   ![admin_gui_before](chrome_fqTnEwLiY6.png)
+
+   ![admin_gui_after](chrome_7OJ5cmGtVk.png)

@@ -1,12 +1,12 @@
 +++
+title = "BebasIT"
+date = 2024-03-11
 draft = true
 +++
 
-# BebasIT on Asuswrt-Merlin
-
-[BebasIT](https://github.com/bebasid/bebasit) implementation on
-[Asuswrt-Merlin](https://www.asuswrt-merlin.net/). Based on [BebasIT OpenWRT
-tutorial](https://github.com/bebasid/bebasit/blob/master/docs/openwrt-tutorial.md).
+<!-- [BebasIT](https://github.com/bebasid/bebasit) implementation on -->
+<!-- [Asuswrt-Merlin](https://www.asuswrt-merlin.net/). Based on [BebasIT OpenWRT -->
+<!-- tutorial](https://github.com/bebasid/bebasit/blob/master/docs/openwrt-tutorial.md). -->
 
 ## Motivation
 
