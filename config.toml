@@ -12,11 +12,10 @@ highlight_code = false
 [extra]
 [extra.menus]
 main = [
-  { name = "Home", url = "" },
-  { name = "Blog", url = "blog/" },
-  { name = "Tags", url = "tags/" },
-  { name = "About", url = "about/" },
+  { name = "Home", url = "/" },
+  { name = "Blog", url = "/blog" },
+  { name = "Tags", url = "/tags" },
 ]
 
 [extra.params]
-footer = "&copy; [mangkoran](https://blog.mangkoran.com) 2024 – {Year} | [Github](https://github.com/mangkoran) | [Twitter](https://twitter.com/mangkoran)"
+footer = "&copy; [mangkoran](https://blog.mangkoran.com) 2024 | [GitHub](https://github.com/mangkoran) | [Twitter](https://twitter.com/mangkoran)"
