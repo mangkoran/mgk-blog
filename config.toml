@@ -15,6 +15,7 @@ main = [
   { name = "Home", url = "/" },
   { name = "Blog", url = "/blog" },
   { name = "Tags", url = "/tags" },
+  { name = "About", url = "/about" },
 ]
 
 [extra.params]
