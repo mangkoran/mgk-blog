@@ -39,9 +39,8 @@ additional context based on my findings with Flint 2.
 
 <!-- TODO: -->
 
-1. The `country_code` flag is stored in `factory_data` partition. However, the
-   exact location varies between router model. We can get the location for our
-   router by getting the info from the router's `devicetree`.
+1. The `country_code` flag is stored in router's `devicetree` in `factory_data`
+   directory. The exact location varies between router model.
 
    ```sh
    hexdump -C /sys/firmware/devicetree/base/gl-hw/factory_data/country_code
