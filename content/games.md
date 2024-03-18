@@ -13,7 +13,7 @@ hide_default_author = true
   - Used to play Dota 2, Warframe
 
 - osu: [ayams02](https://osu.ppy.sh/users/15289216)
-  - osu: 4-5*
+  - osu: 4-5 SR
 
 - Followed esports:
   - League: LCK, LPL, LEC

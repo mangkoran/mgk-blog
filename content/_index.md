@@ -14,4 +14,4 @@ During my free time, I do enjoy doing several things:
 
 - Build mechanical keyboards
 - Watch esports (League, CS)
-- Read books (including visual novels)
+- Read books and manga (light novels, visual novels)
