@@ -20,7 +20,7 @@ third party forwarder as there is no direct shipping to my country) it would
 still a bit cheaper if I buy from Taobao.
 
 One limitation is that any GL.iNet devices sold on their Taobao are "CN" version
-which have their VPN menu in Admin Panel disabled. This is done to comply with
+which have their VPN section in Admin Panel hidden. This is done to comply with
 local regulation.
 
 Fortunately, there is a
@@ -80,8 +80,9 @@ additional context based on my findings with Flint 2.
      our case)
    - `seek=136`: `0x88` to decimal = 136
 
-4. If success, the Admin Panel will no longer shows `CN` logo.
+4. If success, the Admin Panel will no longer shows `CN` logo and VPN section
+   will appear.
 
-   ![admin_gui_before](chrome_fqTnEwLiY6.png)
+   ![admin_gui_before](chrome_fqTnEwLiY6_3.png)
 
-   ![admin_gui_after](chrome_7OJ5cmGtVk.png)
+   ![admin_gui_after](chrome_7OJ5cmGtVk_3.png)
