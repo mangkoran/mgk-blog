@@ -13,9 +13,9 @@ highlight_code = false
 [extra.menus]
 main = [
   { name = "Home", url = "/" },
-  { name = "Blog", url = "/blog" },
-  { name = "Tags", url = "/tags" },
-  { name = "About", url = "/about" },
+  { name = "Blog", url = "/blog/" },
+  { name = "Tags", url = "/tags/" },
+  { name = "About", url = "/about/" },
 ]
 
 [extra.params]
