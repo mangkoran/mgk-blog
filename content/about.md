@@ -15,6 +15,17 @@ hide_default_author = true
 - Git client: LazyGit
 - Tool version manager: mise
 
+## Keyboard
+
+- ai03 Contra: 40% ortho, Akko Matcha Green
+- Steven Karrmann Morizon: 60% ortho, Outemu Silent Cream Yellow
+
+## Audio
+
+- IEM: Letshuoer S12 Pro, Salnotes Zero, CCA CRA, Final Audio E1000
+- TWS: Galaxy Buds 2
+- Eartips: Final Audio Type E
+
 ## Games
 
 - Steam: [ayams02](https://steamcommunity.com/id/ayams02/)
@@ -35,40 +46,25 @@ hide_default_author = true
   - Rocket League
   - FGC: SF6, GGST
 
-## Manga
+## Manga Recs
 
-- Ogami Tsumiki to Kinichijou
-- Sousou no Frieren
-- Flying Witch
-- Kaoru Hana wa Rin to Saku
-- Yaiteru Futari
-- Kimi to Tsuzuru Utakata
-- Fuufu Ijou, Koibito Miman
-- Domestic Kanojo
-
-## Keyboard
-
-- ai03 Contra: 40% ortho, Akko Matcha Green
-- Steven Karrmann Morizon: 60% ortho, Outemu Silent Cream Yellow
+- Ogami Tsumiki to Kinichijou: Romcom
+- Sousou no Frieren: Adventure
+- Flying Witch: SoL
+- Kaoru Hana wa Rin to Saku: Romcom
+- Yaiteru Futari: Romcom, SoL
+- Kimi to Tsuzuru Utakata: GL
+- Fuufu Ijou, Koibito Miman: Romcom
+- Domestic Kanojo: Romcom
 
 ## Song Artist
 
-- Archspire
-- BlackY
-- Camellia
-- ELFENSJóN
-- Endorfin.
-- Feryquitous
-- Kobaryo
-- Laur
-- Lunatic Insomnia
-- Nanahira
-- PassCode
-- Release Hallucination
-- Risa Yuzuki
-- Ryokuoushoku Shakai (I'm so lucky I have their merch)
-- Spawn of Possession
-- Sta
-- Yooh
-- nowisee
-- xi
+- Electronic, rhythm games: Akira Complex, **Camellia**, **BlackY**, Dimrain47,
+  Endorfin., Feryquitous, HyuN, **Kobaryo**, Laur, LeaF, Lunatic Insomnia,
+  **Sta**, Tatsh, xi, **Yooh**, Zekk
+- JP pop: Nanahira, nowisee, Risa Yuzuki, **Ryokuoushoku Shakai**
+- JP metal, rock: Ariabl'eyeS, Asriel, Dragon Guardian, ELFENSJóN, **ICDD**, Imy,
+  PassCode, **Release Hallucination**, TEARS OF TRAGEDY, Tenjin Kotone, Unlucky
+  Morpheus
+- Western metal: Archspire, Fleshgod Apocalypse, Irreversible Mechanism, **Spawn
+  of Possession**, **Xantochroid**
