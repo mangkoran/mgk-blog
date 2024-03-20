@@ -29,7 +29,7 @@ hide_default_author = true
 ## Games
 
 - Steam: [ayams02](https://steamcommunity.com/id/ayams02/)
-  - Warthunder: German BR 8.0 GRB, Italy BR 2.7 GRB
+  - Warthunder: Germany BR 8.0 GRB, Italy BR 2.7 GRB
   - Path of Exile (not active, waiting for PoE2)
   - GBVSR: Narmaya (not active)
   - GGST: Chipp (not active)
