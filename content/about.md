@@ -4,9 +4,9 @@ title = "About Me"
 hide_default_author = true
 +++
 
-## Setup
+## Workstation
 
-- Workstation
+- Machine
   1. Tongfang GK5NR0O: Windows 10 LTSC, WSL2 (mostly desktop use)
   2. ThinkPad X270: Arch (for travel)
 - Text Editor: Neovim (+LazyVim)
@@ -15,16 +15,18 @@ hide_default_author = true
 - Git client: LazyGit
 - Tool version manager: mise
 
-## Keyboard
+## Peripherals
 
-- ai03 Contra: 40% ortho, Akko Matcha Green
-- Steven Karrmann Morizon: 60% ortho, Outemu Silent Cream Yellow
-
-## Audio
-
+- Mouse: Zaopin Z1 Pro
+- Mousepad: X-Raypad Aqua Control 2
+- Keyboard
+  - ai03's Contra: 40% ortho, Akko Matcha Green
+  - Steven Karrmann's Morizon: 60% ortho, Outemu Silent Cream Yellow
 - IEM: Letshuoer S12 Pro, Salnotes Zero, CCA CRA, Final Audio E1000
 - TWS: Galaxy Buds 2
 - Eartips: Final Audio Type E
+- Mic: AT2021
+- Interface: Scarlett Solo G3
 
 ## Games
 
@@ -63,8 +65,8 @@ hide_default_author = true
   Endorfin., Feryquitous, HyuN, **Kobaryo**, Laur, LeaF, Lunatic Insomnia,
   **Sta**, Tatsh, xi, **Yooh**, Zekk
 - JP pop: Nanahira, nowisee, Risa Yuzuki, **Ryokuoushoku Shakai**
-- JP metal, rock: Ariabl'eyeS, Asriel, Dragon Guardian, ELFENSJóN, **ICDD**, Imy,
-  PassCode, **Release Hallucination**, TEARS OF TRAGEDY, Tenjin Kotone, Unlucky
-  Morpheus
+- JP metal, rock: Ariabl'eyeS, Asriel, Dragon Guardian, **ELFENSJóN**, **ICDD**,
+  Imy, PassCode, **Release Hallucination**, TEARS OF TRAGEDY, Tenjin Kotone,
+  Unlucky Morpheus
 - Western metal: Archspire, Fleshgod Apocalypse, Irreversible Mechanism, **Spawn
   of Possession**, **Xantochroid**
