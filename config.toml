@@ -19,4 +19,4 @@ main = [
 ]
 
 [extra.params]
-footer = "&copy; [mangkoran](https://blog.mangkoran.com) 2024 | [GitHub](https://github.com/mangkoran) | [Twitter](https://twitter.com/mangkoran)"
+footer = "&copy; [mangkoran](https://blog.mangkoran.com) 2024 • [GitHub](https://github.com/mangkoran) • [Twitter](https://twitter.com/mangkoran)"
