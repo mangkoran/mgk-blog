@@ -4,7 +4,7 @@ template = "list.html"
 page_template = "single.html"
 +++
 
-Hi, Mangkoran's here! I'm a computer nerd primarily interested in Kubernetes,
+Hi, mangkoran's here! I'm a computer nerd primarily interested in Kubernetes,
 cloud computing, system automation and networking. Currently I'm a site
 reliability engineer at [AccelByte](https://accelbyte.io/).
 
