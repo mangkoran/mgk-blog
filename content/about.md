@@ -9,7 +9,7 @@ hide_default_author = true
 - Machine
   1. Tongfang GK5NR0O: Windows 10 LTSC, WSL2 (mostly desktop use)
   2. ThinkPad X270: Arch (for travel)
-- Text Editor: Neovim (+LazyVim)
+- Text editor: Neovim (+LazyVim)
 - Terminal: WezTerm
 - Shell: Fish
 - Git client: LazyGit
