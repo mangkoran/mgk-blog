@@ -3,4 +3,4 @@
 	url = https://github.com/mangkoran/zola-xmin.git
 [submodule "themes/foobar-zola"]
 	path = themes/foobar-zola
-	url = git@github.com:mangkoran/foobar-zola.git
+	url = https://github.com/mangkoran/foobar-zola.git
