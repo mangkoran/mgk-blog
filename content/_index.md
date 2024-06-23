@@ -1,12 +1,11 @@
 +++
 title = "Home"
-template = "list.html"
+template = "single.html"
 page_template = "single.html"
 +++
 
-Hi, mangkoran's here! I'm a computer nerd primarily interested in Kubernetes,
-cloud computing, system automation and networking. Currently I'm a site
-reliability engineer at [AccelByte](https://accelbyte.io/).
+Hi, mangkoran's here! I'm a computer simpleton primarily interested in Kubernetes,
+cloud computing, system automation and networking.
 
 ## Interests
 
