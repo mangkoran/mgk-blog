@@ -1,12 +1,12 @@
 +++
-title = "Convert GL.iNet GL-MT6000 Flint 2 router version from China to Global"
+title = "Unlock GL.iNet GL-MT6000 Flint 2 China ver. restriction"
 date = 2024-03-11
 draft = false
 [taxonomies]
-tags = ["homelab"]
+tags = ["homelab", "router"]
 +++
 
-## Motivation
+## Background
 
 <!-- TODO: motivation -->
 
@@ -31,12 +31,12 @@ by `country_code` flag stored in eMMC that will be read by the Admin Panel app.
 This post is mostly inspired from that guide, but I will add some additional
 context based on my findings with Flint 2.
 
-## Prerequisite
+## Preparation
 
 1. Enable SSH. In addition it's recommended to use public key auth which has
    been explained in [OpenWRT docs](https://openwrt.org/docs/guide-quick-start/sshadministration).
 
-## Step
+## Let's Cook
 
 <!-- TODO: -->
 
