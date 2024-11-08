@@ -1,5 +1,5 @@
 +++
-title = "Unlock GL.iNet GL-MT6000 Flint 2 China ver. restriction"
+title = "Unlock GL-MT6000 Flint 2 CN version restriction"
 date = 2024-03-11
 draft = false
 [taxonomies]
@@ -51,7 +51,7 @@ context based on my findings with Flint 2.
    - line 1 (`0x00` - `0xff`): partition that stores `country_code`
    - line 2 (`0x10` - `0x13`): byte offset of `country_code` in the partition
 
-   ![devicetree](wezterm-gui_Zycur7YhoG_2.png)
+   ![devicetree](00_wezterm-gui_Zycur7YhoG_2.png)
 
    For this case it's `/dev/mmcblk0p2` with `x88` byte offset.
 
@@ -65,7 +65,7 @@ context based on my findings with Flint 2.
 
    Check according to the byte offset from step 1 result.
 
-   ![mmcblk0p2](wezterm-gui_iNQF7qRFDm.png)
+   ![mmcblk0p2](00_wezterm-gui_iNQF7qRFDm.png)
 
    As we could see currently it's `CN`. We may proceed to update the country code.
 
@@ -84,6 +84,6 @@ context based on my findings with Flint 2.
 4. If success, the Admin Panel should no longer shows `CN` badge and VPN section
    will now appear.
 
-   ![admin_gui_before](chrome_fqTnEwLiY6_3.png)
+   ![admin_gui_before](00_chrome_fqTnEwLiY6_3.png)
 
-   ![admin_gui_after](chrome_7OJ5cmGtVk_3.png)
+   ![admin_gui_after](00_chrome_7OJ5cmGtVk_3.png)
