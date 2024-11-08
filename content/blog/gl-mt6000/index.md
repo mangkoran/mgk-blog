@@ -1,28 +1,25 @@
 +++
-title = "Unlock GL-MT6000 Flint 2 CN version restriction"
+title = "Unlock GL-MT6000 Flint 2 CN Restriction"
 date = 2024-03-11
 draft = false
 [taxonomies]
-tags = ["homelab", "router"]
+tags = ["homelab", "openwrt", "router"]
 +++
 
-## Background
-
-<!-- TODO: motivation -->
+## Flint 2 CN?
 
 As I'm looking a replacement for my now-EOL RT-AX56U, I found Flint 2 and
-immediately tempted for it particularly because of it's OpenWRT support (it's
-firmware is based on OpenWRT anyway) which allows endless tinkering
-possibilities. Out of my curiosity, I found the price on their Taobao store is
-much less (~100 USD) compared to their [global
-store](https://store.gl-inet.com/) (~160 USD, although it comes with free
-shipping). However even with shipping cost added (I need to use third party
-forwarder as there is no direct shipping to my country) it would still a bit
-cheaper if I buy from Taobao.
+immediately tempted for it particularly because of it's OpenWrt support (it's
+firmware is based on OpenWrt) which allows endless tinkering possibilities. Out
+of my curiosity, I found the price on their Taobao store is much less (~100 USD)
+compared to their [global store](https://store.gl-inet.com/) (~160 USD, although
+it comes with free shipping). However even with shipping cost added (as I need
+to use third party forwarder as there is no direct shipping to my country) it's
+still a bit cheaper if I buy from Taobao.
 
-One limitation is that any GL.iNet devices sold on their Taobao store are "CN"
-version which have their VPN section in Admin Panel hidden. This is done to
-comply with local regulation.
+One limitation is that any GL.iNet devices sold on their Taobao store are
+China/CN version which have their VPN section in Admin Panel hidden. This is
+done to comply with local regulation.
 
 Fortunately, there is a
 [guide](https://forum.openwrt.org/t/converting-gl-inet-mt3000-beryl-ax-from-cn-to-global/165159)
@@ -34,11 +31,9 @@ context based on my findings with Flint 2.
 ## Preparation
 
 1. Enable SSH. In addition it's recommended to use public key auth which has
-   been explained in [OpenWRT docs](https://openwrt.org/docs/guide-quick-start/sshadministration).
+   been explained in [OpenWrt docs](https://openwrt.org/docs/guide-quick-start/sshadministration).
 
 ## Let's Cook
-
-<!-- TODO: -->
 
 1. The `country_code` flag location varies between router model. We can get the
    location for our router by getting the info from router's `devicetree`, in
@@ -53,7 +48,7 @@ context based on my findings with Flint 2.
 
    ![devicetree](00_wezterm-gui_Zycur7YhoG_2.png)
 
-   For this case it's `/dev/mmcblk0p2` with `x88` byte offset.
+   For our case it's `/dev/mmcblk0p2` with `x88` byte offset.
 
 2. Check the partition based on step 1 result. As it contains hundreds of lines,
    it's recommended to pipe the output to a pager or text editor. Here we use
@@ -67,7 +62,7 @@ context based on my findings with Flint 2.
 
    ![mmcblk0p2](00_wezterm-gui_iNQF7qRFDm.png)
 
-   As we could see currently it's `CN`. We may proceed to update the country code.
+   Currently the value is `CN`. We may proceed to update the country code.
 
 3. Update the country code. Adjust the command based on step 1 result.
 
@@ -79,7 +74,7 @@ context based on my findings with Flint 2.
 
    - `bs=1`: write 1 byte at a time (default is 512 and it would be an issue for
      our case)
-   - `seek=136`: `0x88` converted to decimal = 136
+   - `seek=136`: move to position `0x88` converted to decimal = 136
 
 4. If success, the Admin Panel should no longer shows `CN` badge and VPN section
    will now appear.
