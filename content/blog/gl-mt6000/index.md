@@ -24,61 +24,70 @@ done to comply with local regulation.
 Fortunately, there is a
 [guide](https://forum.openwrt.org/t/converting-gl-inet-mt3000-beryl-ax-from-cn-to-global/165159)
 to convert GL.iNet routers to Global version. This router version is determined
-by `country_code` flag stored in eMMC that will be read by the Admin Panel app.
-This post is mostly inspired from that guide, but I will add some additional
-context based on my findings with Flint 2.
-
-## Preparation
-
-1. Enable SSH. In addition it's recommended to use public key auth which has
-   been explained in [OpenWrt docs](https://openwrt.org/docs/guide-quick-start/sshadministration).
+by `country_code` variable stored in eMMC that will be read by the Admin Panel
+app. This post is mostly inspired from that guide, but I will add some
+additional context based on my findings with Flint 2.
 
 ## Let's Cook
 
-1. The `country_code` flag location varies between router model. We can get the
-   location for our router by getting the info from router's `devicetree`, in
-   `factory_data` directory.
+### Preparation
 
-   ```sh
-   hexdump -C /sys/firmware/devicetree/base/gl-hw/factory_data/country_code
-   ```
+Before we start, please enable the router's SSH. In addition it's recommended to
+use public key auth which is explained more in [OpenWrt
+docs](https://openwrt.org/docs/guide-quick-start/sshadministration).
 
-   - line 1 (`0x00` - `0xff`): partition that stores `country_code`
-   - line 2 (`0x10` - `0x13`): byte offset of `country_code` in the partition
+### Check where the required variable is stored
 
-   ![devicetree](00_wezterm-gui_Zycur7YhoG_2.png)
+The `country_code` variable may stored differently between router model. To
+check where the `country_code` variable is stored, we can get the data from
+router's `devicetree`.
 
-   For our case it's `/dev/mmcblk0p2` with `x88` byte offset.
+```sh
+hexdump -C /sys/firmware/devicetree/base/gl-hw/factory_data/country_code
+```
 
-2. Check the partition based on step 1 result. As it contains hundreds of lines,
-   it's recommended to pipe the output to a pager or text editor. Here we use
-   `vim`.
+![devicetree](00_wezterm-gui_Zycur7YhoG_2.png)
 
-   ```sh
-   hexdump -C /dev/mmcblk0p2 | vim -
-   ```
+From the result we can get the data as follows:
 
-   Check according to the byte offset from step 1 result.
+- line 1 (`0x00` - `0xff`): partition that stores `country_code` --> `/dev/mmcblk0p2`
+- line 2 (`0x10` - `0x13`): byte offset of `country_code` in the partition --> `x88`
 
-   ![mmcblk0p2](00_wezterm-gui_iNQF7qRFDm.png)
+### Verify the variable partition
 
-   Currently the value is `CN`. We may proceed to update the country code.
+Check the content of the partition based on previous step
+(`/dev/mmcblk0p2`). As it may contains hundreds of lines, I recommend to pipe
+the output to a pager or text editor which in this case I use `vim`.
 
-3. Update the country code. Adjust the command based on step 1 result.
+```sh
+hexdump -C /dev/mmcblk0p2 | vim -
+```
 
-   ```sh
-   echo "US" | dd of=/dev/mmcblk0p2 bs=1 seek=136
-   sync
-   reboot
-   ```
+![mmcblk0p2](00_wezterm-gui_iNQF7qRFDm.png)
 
-   - `bs=1`: write 1 byte at a time (default is 512 and it would be an issue for
-     our case)
-   - `seek=136`: move to position `0x88` converted to decimal = 136
+Check the variable value based on the byte offset from previous step (`x88`).
+Currently the value is `CN`. We may proceed to update the country code.
 
-4. If success, the Admin Panel should no longer shows `CN` badge and VPN section
-   will now appear.
+### Update the country code
 
-   ![admin_gui_before](00_chrome_fqTnEwLiY6_3.png)
+Adjust the `dd` options based on previous step.
 
-   ![admin_gui_after](00_chrome_7OJ5cmGtVk_3.png)
+```sh
+echo "US" | dd of=/dev/mmcblk0p2 bs=1 seek=136
+sync
+reboot
+```
+
+Options explanation ([ref](https://man.archlinux.org/man/dd.1.en)):
+
+- `bs=1`: Write 1 byte at a time
+- `seek=136`: Seek to position 136 (`x88` converted to decimal) before write
+
+### Check whether the change is successful
+
+If success, the Admin Panel should no longer shows `CN` badge and VPN section
+should appear now.
+
+![admin_gui_before](00_chrome_fqTnEwLiY6_3.png)
+
+![admin_gui_after](00_chrome_7OJ5cmGtVk_3.png)
