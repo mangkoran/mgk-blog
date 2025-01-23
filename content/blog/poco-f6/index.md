@@ -41,21 +41,24 @@ For the root method we are going to use KernelSU. KernelSU is a new root
 approach which works in kernel mode. Basically it should be better at root
 hiding.
 
-1. Install KernelSU app
-2. Boot to Fastboot
-3. fastboot boot kernelsu
-4. KernelSU app > Install (top right, arrow down box) > Direct install > Reboot
+<!-- 1. Install KernelSU app -->
+<!-- 2. Boot to Fastboot -->
+<!-- 3. fastboot boot kernelsu -->
+<!-- 4. KernelSU app > Install (top right, arrow down box) > Direct install > Reboot -->
 
 ## Current setup
 
-- ROM: xiaomi.eu
+- ROM: HyperOS 2 by xiaomi.eu
 - Root: KernelSU
 - Modules
   - Zygisk Next
   - Shamiko
   - zygisk-detach
+  - bindhost
+  - Revanced Google Photos
   - Revanced Youtube
-  - Revanced Photos
+  - Revanced Youtube Music
   - LSPosed (JingMatrix)
     - HyperCeiler
-    - MiCTS
+    - RevengeXposed
+    - Wa Enhancer
