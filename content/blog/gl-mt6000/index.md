@@ -6,7 +6,7 @@ draft = false
 tags = ["homelab", "openwrt", "router"]
 +++
 
-## Flint 2 CN?
+## Why Flint 2
 
 As I'm looking a replacement for my now-EOL RT-AX56U, I found Flint 2 and
 immediately tempted for it particularly because of it's OpenWrt support (it's
@@ -28,7 +28,11 @@ by `country_code` variable stored in eMMC that will be read by the Admin Panel
 app. This post is mostly inspired from that guide, but I will add some
 additional context based on my findings with Flint 2.
 
-## Let's Cook
+## Let's cook
+
+Please note this blog is licensed under [MIT
+license](https://spdx.org/licenses/MIT.html). I have no liability for any damage
+that may arise from this post. You do you.
 
 ### Preparation
 
