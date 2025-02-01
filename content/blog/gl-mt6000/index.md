@@ -3,7 +3,7 @@ title = "Unlock GL-MT6000 Flint 2 CN Restriction"
 date = 2024-03-11
 draft = false
 [taxonomies]
-tags = ["homelab", "openwrt", "router"]
+tags = ["homelab"]
 +++
 
 ## Why Flint 2
@@ -20,6 +20,8 @@ still a bit cheaper if I buy from Taobao.
 One limitation is that any GL.iNet devices sold on their Taobao store are
 China/CN version which have their VPN section in Admin Panel hidden. This is
 done to comply with local regulation.
+
+![admin_gui_before](00_chrome_fqTnEwLiY6_3.png)
 
 Fortunately, there is a
 [guide](https://forum.openwrt.org/t/converting-gl-inet-mt3000-beryl-ax-from-cn-to-global/165159)
@@ -40,7 +42,7 @@ Before we start, please enable the router's SSH. In addition it's recommended to
 use public key auth which is explained more in [OpenWrt
 docs](https://openwrt.org/docs/guide-quick-start/sshadministration).
 
-### Check where the required variable is stored
+### Check where country code variable is stored
 
 The `country_code` variable may stored differently between router model. To
 check where the `country_code` variable is stored, we can get the data from
@@ -52,12 +54,10 @@ hexdump -C /sys/firmware/devicetree/base/gl-hw/factory_data/country_code
 
 ![devicetree](00_wezterm-gui_Zycur7YhoG_2.png)
 
-From the result we can get the data as follows:
-
 - line 1 (`0x00` - `0xff`): partition that stores `country_code` --> `/dev/mmcblk0p2`
 - line 2 (`0x10` - `0x13`): byte offset of `country_code` in the partition --> `x88`
 
-### Verify the variable partition
+### Verify variable partition
 
 Check the content of the partition based on previous step
 (`/dev/mmcblk0p2`). As it may contains hundreds of lines, I recommend to pipe
@@ -72,7 +72,7 @@ hexdump -C /dev/mmcblk0p2 | vim -
 Check the variable value based on the byte offset from previous step (`x88`).
 Currently the value is `CN`. We may proceed to update the country code.
 
-### Update the country code
+### Update country code value
 
 Adjust the `dd` options based on previous step.
 
@@ -82,16 +82,14 @@ sync
 reboot
 ```
 
-Options explanation ([ref](https://man.archlinux.org/man/dd.1.en)):
+- `bs=1`: Write `1` byte at a time
+- `seek=136`: Seek to position `136` (`x88` converted to decimal) before write
 
-- `bs=1`: Write 1 byte at a time
-- `seek=136`: Seek to position 136 (`x88` converted to decimal) before write
+([man page](https://man.archlinux.org/man/dd.1.en))
 
-### Check whether the change is successful
+### Verify result
 
-If success, the Admin Panel should no longer shows `CN` badge and VPN section
-should appear now.
-
-![admin_gui_before](00_chrome_fqTnEwLiY6_3.png)
+If success, the Admin Panel should no longer shows `CN` badge and the VPN section
+should appear.
 
 ![admin_gui_after](00_chrome_7OJ5cmGtVk_3.png)
