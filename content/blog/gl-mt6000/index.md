@@ -85,7 +85,7 @@ reboot
 - `bs=1`: Write `1` byte at a time
 - `seek=136`: Seek to position `136` (`x88` converted to decimal) before write
 
-([man page](https://man.archlinux.org/man/dd.1.en))
+[`dd` man page](https://man.archlinux.org/man/dd.1.en)
 
 ### Verify result
 
