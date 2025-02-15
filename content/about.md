@@ -20,11 +20,13 @@ hide_default_author = true
 - Mouse: Zaopin Z1 Pro
 - Mousepad: X-Raypad Aqua Control 2
 - Keyboard
-  - ai03's Contra: 40% ortho, Akko Matcha Green
-  - Steven Karrmann's Morizon: 60% ortho, Outemu Silent Cream Yellow
-- IEM: Letshuoer S12 Pro, Salnotes Zero, CCA CRA, Final Audio E1000
-- TWS: Galaxy Buds 2
-- Eartips: Final Audio Type E
+  - [morizon](https://github.com/skarrmann/morizon): 60% ortho, Akko Rosewood
+    (current), Outemu Silent Cream Yellow (previous)
+  - [Contra](https://github.com/ai03-2725/Contra): 40% ortholinear, Akko Matcha Green
+- IEM: Campfire Trifecta, Letshuoer S12 Pro, Salnotes Zero, CCA CRA, Final Audio
+  E1000
+- TWS: Airpods Pro 2, Galaxy Buds 2
+- Eartips: Divinus Velvet, Final Audio Type E
 - Mic: AT2021
 - Interface: Scarlett Solo G3
 
@@ -35,19 +37,19 @@ hide_default_author = true
   - Path of Exile (not active, waiting for PoE2)
   - GBVSR: Narmaya (not active)
   - GGST: Chipp (not active)
-  - ADOFAI (when bored of osu)
-  - Used to play Dota 2, Warframe
+  - ADOFAI
+  - Used to play Dota 2, Warframe, League
 - osu!: [ayams02](https://osu.ppy.sh/users/15289216)
   - Mainly play on osu!lazer
   - Std: 4-5 SR
   - Taiko: 2 SR
+- Other single player: Minecraft, Noita, Balatro, Factorio
 - Followed esports:
   - League: LCK, LPL, LEC
-  - CS2
-  - Starcraft 2
-  - Rocket League
   - FGC: SF6, GGST
+  - CS2, Starcraft 2, Rocket League
 
+<!--
 ## Manga Recs
 
 - Ogami Tsumiki to Kinichijou: Romcom
@@ -58,8 +60,9 @@ hide_default_author = true
 - Kimi to Tsuzuru Utakata: GL
 - Fuufu Ijou, Koibito Miman: Romcom
 - Domestic Kanojo: Romcom
+-->
 
-## Song Artist
+## Song Artists
 
 - Electronic, rhythm games: Akira Complex, **Camellia**, **BlackY**, Dimrain47,
   Endorfin., Feryquitous, HyuN, **Kobaryo**, Laur, LeaF, Lunatic Insomnia,
