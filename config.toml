@@ -14,6 +14,7 @@ highlight_code = false
 items = [
   { text = "Home", url = "/" },
   { text = "Blog", url = "/blog/" },
+  { text = "Log", url = "/log/" },
   # { name = "Tags", url = "/tags/" },
   { text = "About", url = "/about/" },
 ]
