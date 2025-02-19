@@ -6,7 +6,7 @@ draft = false
 tags = ["android"]
 +++
 
-## Finally, a new phone
+<!-- ## Finally, a new phone -->
 
 I've been eyeing POCO F6 ever since its release in China as Redmi Turbo 3. The
 performance is really good considering its price which is all I care about. So
@@ -56,7 +56,7 @@ hiding.
   - Zygisk Next
   - Shamiko
   - zygisk-detach
-  - bindhost
+  - bindhost (but seems not working?)
   - Revanced Google Photos
   - Revanced Youtube
   - Revanced Youtube Music

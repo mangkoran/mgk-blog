@@ -6,7 +6,7 @@ draft = false
 tags = ["homelab"]
 +++
 
-## Why Flint 2
+<!-- ## Why Flint 2 -->
 
 As I'm looking a replacement for my now-EOL RT-AX56U, I found Flint 2 and
 immediately tempted for it particularly because of it's OpenWrt support (it's
