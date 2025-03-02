@@ -16,5 +16,6 @@ items = [
   { text = "Blog", url = "/blog/" },
   { text = "Log", url = "/log/" },
   # { name = "Tags", url = "/tags/" },
+  { text = "Now", url = "/now/" },
   { text = "About", url = "/about/" },
 ]
