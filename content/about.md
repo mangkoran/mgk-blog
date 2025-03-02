@@ -4,6 +4,8 @@ title = "About Me"
 hide_default_author = true
 +++
 
+Assorted list of things about me.
+
 ## Workstation
 
 - Machine
